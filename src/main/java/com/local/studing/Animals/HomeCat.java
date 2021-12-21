@@ -17,7 +17,11 @@ public class HomeCat extends Animals{
 
     @Override
     public void run(int length) {
-        System.out.println(this.name + " пробежал " + length + " метров");
+        if (length > MAX_RUN_LENGTH) {
+            System.out.println(this.name + " не может пробежать " + length + " метров");
+        } else {
+            System.out.println(this.name + " пробежал " + length + " метров");
+        }
     }
 
     @Override

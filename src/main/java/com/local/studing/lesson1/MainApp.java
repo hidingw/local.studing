@@ -5,35 +5,37 @@ import com.local.studing.Animals.Dog;
 import com.local.studing.Animals.HomeCat;
 import com.local.studing.Animals.Tiger;
 
+import java.util.Random;
+
 public class MainApp {
     public static void main(String[] args) {
-        Dog puppy = new Dog("Spot", "Combinate", 3);
-        HomeCat kitty = new HomeCat("Fluphi", "White", 4);
-        HomeCat streetCat = new HomeCat("Bob", "Ginger", 12);
-        Tiger sherkhan = new Tiger("Scherkhan", "Tiggery", 8);
+        Animals[] animals = {
+            new Dog("Spot", "Combinate", 3),
+            new HomeCat("Fluphi", "White", 4),
+            new HomeCat("Bob", "Ginger", 12),
+            new Tiger("Scherkhan", "Tiggery", 8)
+        };
 
         Animals.getCommonCount();
         Dog.getDogCount();
         HomeCat.getHomeCatCount();
         Tiger.getTigerCount();
 
-        int tests = 3;
+        int tests = 1;
 
         for (int i = 0; i < tests; i++){
-            int runLength = (int) Math.random() * 600;
-            int swimLength = (int) Math.random() * 15;
+            int runLength = getRandom(600, 50);
+            int swimLength = getRandom(15,1);
 
-            puppy.run(runLength);
-            puppy.swim(swimLength);
-
-            kitty.run(runLength);
-            kitty.swim(swimLength);
-
-            streetCat.run(runLength);
-            streetCat.swim(swimLength);
-
-            sherkhan.run(runLength);
-            sherkhan.swim(swimLength);
+            for (Animals animal: animals) {
+                animal.run(runLength);
+                animal.swim(swimLength);
+            }
         }
+    }
+
+    public static int getRandom(int max, int min){
+        Random rnd = new Random();
+        return rnd.nextInt(max - min) + min;
     }
 }

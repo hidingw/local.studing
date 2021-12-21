@@ -17,7 +17,7 @@ public final class Dog extends Animals{
     @Override
     public void run(int length) {
         if (length > MAX_RUN_LENGTH) {
-            System.out.println(this.name + "не может пробежать " + length + "метров");
+            System.out.println(this.name + " не может пробежать " + length + "метров");
         } else {
             System.out.println(this.name + " пробежал " + length + " метров");
         }
