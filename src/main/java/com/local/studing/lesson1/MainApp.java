@@ -21,7 +21,7 @@ public class MainApp {
         HomeCat.getHomeCatCount();
         Tiger.getTigerCount();
 
-        int tests = 1;
+        int tests = getRandom(10, 1);
 
         for (int i = 0; i < tests; i++){
             int runLength = getRandom(600, 50);
