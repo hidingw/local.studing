@@ -1,9 +1,9 @@
 package com.local.studing.lesson1;
 
-import com.local.studing.Animals.Animals;
-import com.local.studing.Animals.Dog;
-import com.local.studing.Animals.HomeCat;
-import com.local.studing.Animals.Tiger;
+import com.local.studing.lesson1.Animals.Animals;
+import com.local.studing.lesson1.Animals.Dog;
+import com.local.studing.lesson1.Animals.HomeCat;
+import com.local.studing.lesson1.Animals.Tiger;
 
 import java.util.Random;
 

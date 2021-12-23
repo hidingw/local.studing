@@ -1,4 +1,4 @@
-package com.local.studing.Animals;
+package com.local.studing.lesson1.Animals;
 
 public class Tiger extends HomeCat{
     static int tigerCount = 0;

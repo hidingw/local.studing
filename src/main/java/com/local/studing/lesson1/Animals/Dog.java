@@ -1,4 +1,4 @@
-package com.local.studing.Animals;
+package com.local.studing.lesson1.Animals;
 
 public final class Dog extends Animals{
     static final int MAX_RUN_LENGTH = 500;
